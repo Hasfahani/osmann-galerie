@@ -7,12 +7,53 @@
     <meta name="description" content="Galerie Osman – Autorisiertes Seiko-Fachgeschäft in Berlin Reinickendorf. Hochwertige Uhren, Reparaturservice und persönliche Beratung." />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- WhatsApp Button CSS -->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+            z-index: 9999;
+            animation: bounce 1.8s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-float img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        .qr-box {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .qr-box img {
+            width: 170px;
+            border-radius: 12px;
+            border: 2px solid #ddd;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
 <div id="wrapper">
 
-<!-- Header -->
 <header id="header">
     <div class="inner">
         <a href="index.html" class="logo">
@@ -20,14 +61,11 @@
             <span class="title">Galerie Osman</span>
         </a>
         <nav>
-            <ul>
-                <li><a href="#menu">Menü</a></li>
-            </ul>
+            <ul><li><a href="#menu">Menü</a></li></ul>
         </nav>
     </div>
 </header>
 
-<!-- Menu -->
 <nav id="menu">
     <h2>Menü</h2>
     <ul>
@@ -38,93 +76,46 @@
     </ul>
 </nav>
 
-<!-- Main -->
 <div id="main">
 <div class="inner">
 
 <header>
     <h1>Exklusive Uhren & Professioneller Service in Berlin</h1>
-    <p>Autorisiertes Seiko-Fachgeschäft mit hochwertigen Armbanduhren, professionellen Reparaturen und persönlicher Beratung – seit vielen Jahren im Herzen von Reinickendorf.</p>
+    <p>Als autorisiertes Seiko-Fachgeschäft bietet Galerie Osman hochwertige Armbanduhren, persönliche Beratung und fachgerechte Reparaturen – seit vielen Jahren im Herzen von Reinickendorf.</p>
 </header>
 
 <section class="tiles">
 
-    <!-- Store interior -->
     <article class="style1">
-        <span class="image">
-            <img src="images/pic01.jpg" alt="Geschäft Innenansicht" />
-        </span>
-        <a href="generic.html">
+        <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+        <div>
             <h2>Unser Geschäft</h2>
-            <div class="content">
-                <p>Besuchen Sie uns in der Residenzstraße 114, 13409 Berlin.</p>
-            </div>
-        </a>
+            <p>Besuchen Sie uns in der Residenzstraße 114, 13409 Berlin.</p>
+        </div>
     </article>
 
-    <!-- Watch collection -->
     <article class="style2">
-        <span class="image">
-            <img src="images/pic02.jpg" alt="Uhrenkollektion" />
-        </span>
-        <a href="elements.html">
+        <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+        <div>
             <h2>Kollektion</h2>
-            <div class="content">
-                <p>Entdecken Sie moderne und klassische Modelle sorgfältig ausgewählt.</p>
-            </div>
-        </a>
+            <p>Moderne und klassische Modelle.</p>
+        </div>
     </article>
 
-    <!-- Macro watch -->
     <article class="style3">
-        <span class="image">
-            <img src="images/pic03.jpg" alt="Makro Uhrenfoto" />
-        </span>
-        <a href="elements.html">
-            <h2>Details & Qualität</h2>
-            <div class="content">
-                <p>Hochwertige Uhrwerke und perfekte Verarbeitung.</p>
-            </div>
-        </a>
-    </article>
-
-    <!-- Wrist lifestyle -->
-    <article class="style4">
-        <span class="image">
-            <img src="images/pic04.jpg" alt="Wrist Shot" />
-        </span>
-        <a href="generic.html">
-            <h2>Tragekomfort</h2>
-            <div class="content">
-                <p>Einzigartige Designs für jeden Anlass.</p>
-            </div>
-        </a>
-    </article>
-
-    <!-- Repair service -->
-    <article class="style5">
-        <span class="image">
-            <img src="images/pic07.jpg" alt="Reparaturservice" />
-        </span>
-        <a href="generic.html">
+        <span class="image"><img src="images/pic07.jpg" alt="" /></span>
+        <div>
             <h2>Reparaturservice</h2>
-            <div class="content">
-                <p>Sofort-Batteriewechsel, Bandkürzung & fachgerechte Wartung.</p>
-            </div>
-        </a>
+            <p>Batteriewechsel, Bandkürzung & Wartung.</p>
+        </div>
     </article>
 
-    <!-- Dealer image -->
-    <article class="style1">
-        <span class="image">
-            <img src="images/pic11.jpg" alt="Seiko Fachhändler" />
-        </span>
-        <a href="generic.html">
+    <article class="style4">
+        <span class="image"><img src="images/pic11.jpg" alt="" /></span>
+        <div>
             <h2>Seiko Fachhändler</h2>
-            <div class="content">
-                <p>Offizieller Händler mit langjähriger Expertise.</p>
-            </div>
-        </a>
+            <p>Offizieller Händler mit Expertise.</p>
+        </div>
     </article>
 
 </section>
@@ -132,54 +123,56 @@
 </div>
 </div>
 
-<!-- Footer -->
 <footer id="footer">
-    <div class="inner">
+<div class="inner">
 
-        <!-- Contact -->
-        <section>
-            <h2>Kontakt</h2>
-            <form method="post" action="mailto:zouheir.osman1@gmail.com" enctype="text/plain">
-                <div class="fields">
-                    <div class="field half">
-                        <input type="text" name="name" placeholder="Name" required />
-                    </div>
-                    <div class="field half">
-                        <input type="email" name="email" placeholder="E-Mail" required />
-                    </div>
-                    <div class="field">
-                        <textarea name="message" placeholder="Nachricht" required></textarea>
-                    </div>
-                </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Senden" class="primary" /></li>
-                </ul>
-            </form>
-        </section>
+<section>
+    <h2>Kontakt</h2>
+    
+    <p><strong>Message us on WhatsApp:</strong></p>
 
-        <!-- Address -->
-        <section>
-            <h2>Adresse & Öffnungszeiten</h2>
-            <p>
-                Residenzstraße 114<br>
-                13409 Berlin<br>
-                Telefon: +49 163 1522940<br><br>
-                <strong>Öffnungszeiten:</strong><br>
-                Mo–Fr: 10:00–19:00<br>
-                Sa: 10:00–16:00
-            </p>
+    <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
+       target="_blank" class="button primary">
+       WhatsApp Nachricht senden
+    </a>
 
-            <h2>Google Maps</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.7856202323946!2d13.34224!3d52.57115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8531b0a77cfb1%3A0x38f61c9dc32d541c!2sResidenzstra%C3%9Fe%20114%2C%2013409%20Berlin!5e0!3m2!1sde!2sde!4v1700000000000"
-                width="100%" height="250" style="border:0;" allowfullscreen loading="lazy">
-            </iframe>
-        </section>
-
+    <div class="qr-box">
+        <p>WhatsApp QR Code:</p>
+        <img src="images/qr-whatsapp.png" alt="WhatsApp QR Code" />
     </div>
+
+    <form method="post" action="mailto:zouheir.osman1@gmail.com" enctype="text/plain">
+        <div class="fields">
+            <div class="field half"><input type="text" name="name" placeholder="Name" required></div>
+            <div class="field half"><input type="email" name="email" placeholder="E-Mail" required></div>
+            <div class="field"><textarea name="message" placeholder="Nachricht" required></textarea></div>
+        </div>
+        <ul class="actions"><li><input type="submit" value="Senden" class="primary"></li></ul>
+    </form>
+</section>
+
+<section>
+    <h2>Adresse & Öffnungszeiten</h2>
+    <p>
+        Residenzstraße 114<br>
+        13409 Berlin<br>
+        Telefon: +49 163 1522940<br><br>
+        <strong>Öffnungszeiten:</strong><br>
+        Mo–Fr: 10:00–19:00<br>
+        Sa: 10:00–16:00
+    </p>
+</section>
+
+</div>
 </footer>
 
 </div>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
+   class="whatsapp-float" target="_blank">
+    <img src="images/whatsapp.png" alt="WhatsApp">
+</a>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
