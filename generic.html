@@ -4,13 +4,50 @@
     <title>Über uns & Service – Galerie Osman</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Galerie Osman – Über uns, Geschichte, Service & Reparatur hochwertiger Uhren in Berlin Reinickendorf." />
-    
+
+    <!-- SEO -->
+    <meta name="description" content="Über uns & Service – Galerie Osman. Seiko Fachhändler, Batteriewechsel, Uhrenreparaturen, Beratung & Service in Berlin Reinickendorf." />
+    <meta name="keywords" content="Über uns, Seiko, Uhren Berlin, Reparatur, Batteriewechsel, Reinickendorf, Galerie Osman" />
+    <meta name="author" content="Galerie Osman" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hasfahani.github.io/osmann-galerie/ueber-uns.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Über uns & Service – Galerie Osman" />
+    <meta property="og:description" content="Seiko Fachhändler & Uhrenservice in Berlin Reinickendorf. Beratung, Reparatur, Batteriewechsel & mehr." />
+    <meta property="og:image" content="https://hasfahani.github.io/osmann-galerie/images/logo.png" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
-    <!-- WhatsApp Button CSS -->
     <style>
+
+        /* Modern sticky header */
+        #header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(6px);
+            background: rgba(0, 0, 0, 0.88);
+        }
+
+        #header nav ul li a[href="#menu"] {
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        #header .logo .symbol img {
+            border-radius: 50%;
+        }
+
+        #header nav ul li a {
+            padding: 0.6em 0.9em;
+        }
+
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             width: 65px;
@@ -27,35 +64,27 @@
             align-items: center;
             justify-content: center;
         }
-
-        .whatsapp-float img {
-            width: 40px;
-            height: 40px;
-        }
-
+        .whatsapp-float img { width: 40px; height: 40px; }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
             40% {transform: translateY(-10px);}
             60% {transform: translateY(-5px);}
         }
 
-        .qr-box {
-            margin-top: 20px;
-            text-align: center;
+        /* Google Map Styling */
+        .map-container {
+            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
 
-        .qr-box img {
-            width: 170px;
-            border-radius: 12px;
-            border: 2px solid #ddd;
-        }
     </style>
 </head>
 
 <body class="is-preload">
 <div id="wrapper">
 
-<!-- Header -->
 <header id="header">
     <div class="inner">
         <a href="index.html" class="logo">
@@ -66,7 +95,6 @@
     </div>
 </header>
 
-<!-- Menu -->
 <nav id="menu">
     <h2>Menü</h2>
     <ul>
@@ -77,7 +105,6 @@
     </ul>
 </nav>
 
-<!-- Main -->
 <div id="main">
 <div class="inner">
 
@@ -90,10 +117,10 @@
 <p>Willkommen bei <strong>Galerie Osman</strong> – Ihrem vertrauenswürdigen Uhrengeschäft in Berlin-Reinickendorf. Als autorisiertes Seiko-Fachgeschäft stehen wir seit vielen Jahren für Qualität, Kompetenz und persönlichen Service.</p>
 
 <h2>Unsere Geschichte</h2>
-<p>Seit unserer Gründung begleiten wir Kunden aus ganz Berlin. Wir legen großen Wert auf hochwertige Markenuhren, faire Preise und persönliche Beratung. Viele Stammkunden besuchen uns seit Jahren – für neue Modelle, Reparaturen oder fachkundige Beratung.</p>
+<p>Seit unserer Gründung begleiten wir Kunden aus ganz Berlin. Wir legen großen Wert auf hochwertige Markenuhren, faire Preise und persönliche Beratung.</p>
 
 <span class="image main">
-    <img src="images/pic12.jpg" alt="Galerie Osman Innenansicht" />
+    <img src="images/pic12.jpg" alt="Innenansicht" />
 </span>
 
 <h2>Unsere Dienstleistungen</h2>
@@ -107,19 +134,19 @@
 <div class="box">
     <h3>Bandkürzung & Armbandwechsel</h3>
     <span class="image left"><img src="images/pic08.jpg" alt="Armbandwechsel"></span>
-    <p>Professionelle Anpassung und Wechsel von Metall- und Lederarmbändern.</p>
+    <p>Professionelle Anpassung von Metall- und Lederarmbändern.</p>
 </div>
 
 <div class="box">
     <h3>Uhrenreinigung & Pflege</h3>
     <span class="image left"><img src="images/pic09.jpg" alt="Uhrenpflege"></span>
-    <p>Sanfte Reinigung und Pflege für den langfristigen Erhalt Ihrer Uhr.</p>
+    <p>Sanfte Reinigung und Pflege für langfristigen Erhalt.</p>
 </div>
 
 <div class="box">
     <h3>Beratung & Modellinformationen</h3>
     <span class="image left"><img src="images/pic10.jpg" alt="Beratung"></span>
-    <p>Ob Geschenk, neues Modell oder Originalteile – wir beraten Sie ehrlich und kompetent.</p>
+    <p>Wir beraten Sie ehrlich und kompetent – ob Geschenk, neue Modelle oder Ersatzteile.</p>
 </div>
 
 <h2>Warum Galerie Osman?</h2>
@@ -136,23 +163,18 @@
 </div>
 </div>
 
-<!-- Footer -->
 <footer id="footer">
 <div class="inner">
 
 <section>
     <h2>Kontakt</h2>
 
-    <p><strong>Message us on WhatsApp:</strong></p>
-
     <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
-       target="_blank" class="button primary">
-       WhatsApp Nachricht senden
-    </a>
+       target="_blank" class="button primary">WhatsApp Nachricht senden</a>
 
     <div class="qr-box">
         <p>WhatsApp QR Code:</p>
-        <img src="images/qr-whatsapp.png" alt="WhatsApp QR Code" />
+        <img src="images/qr-whatsapp.png" alt="QR" />
     </div>
 
     <form method="post" action="mailto:zouheir.osman1@gmail.com" enctype="text/plain">
@@ -175,6 +197,14 @@
         Mo–Fr: 10:00–19:00<br>
         Sa: 10:00–16:00
     </p>
+
+    <!-- GOOGLE MAPS -->
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=Residenzstraße+114+13409+Berlin&output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen=""
+            loading="lazy"></iframe>
+    </div>
 </section>
 
 </div>
@@ -182,13 +212,13 @@
 
 </div>
 
-<!-- Floating WhatsApp Button -->
+<!-- WhatsApp Button -->
 <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
    class="whatsapp-float" target="_blank">
     <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
 
-<!-- FULL JS LOADING FIX -->
+<!-- JS -->
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/browser.min.js"></script>
 <script src="./assets/js/breakpoints.min.js"></script>

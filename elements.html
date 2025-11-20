@@ -4,13 +4,50 @@
     <title>Kollektion – Galerie Osman</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Galerie Osman – hochwertige Uhrenkollektion in Berlin Reinickendorf." />
 
+    <!-- SEO -->
+    <meta name="description" content="Galerie Osman – ausgewählte Uhrenkollektion. Seiko Modelle, moderne Designs und hochwertige Zeitmesser in Berlin Reinickendorf." />
+    <meta name="keywords" content="Kollektion, Uhren, Seiko, Uhren Berlin, Galerie Osman, Reinickendorf" />
+    <meta name="author" content="Galerie Osman" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hasfahani.github.io/osmann-galerie/elements.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kollektion – Galerie Osman" />
+    <meta property="og:description" content="Hochwertige Uhrenmodelle und exklusive Auswahl bei Galerie Osman in Berlin Reinickendorf." />
+    <meta property="og:image" content="https://hasfahani.github.io/osmann-galerie/images/logo.png" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
-    <!-- WhatsApp Button CSS -->
     <style>
+
+        /* Modern sticky header */
+        #header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(6px);
+            background: rgba(0, 0, 0, 0.88);
+        }
+
+        #header nav ul li a[href="#menu"] {
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        #header .logo .symbol img {
+            border-radius: 50%;
+        }
+
+        #header nav ul li a {
+            padding: 0.6em 0.9em;
+        }
+
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             width: 65px;
@@ -27,30 +64,22 @@
             align-items: center;
             justify-content: center;
         }
-
-        .whatsapp-float img {
-            width: 40px;
-            height: 40px;
-        }
-
+        .whatsapp-float img { width: 40px; height: 40px; }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
             40% {transform: translateY(-10px);}
             60% {transform: translateY(-5px);}
         }
 
-        .qr-box {
-            margin-top: 20px;
-            text-align: center;
+        /* Google Map Styling */
+        .map-container {
+            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
 
-        .qr-box img {
-            width: 170px;
-            border-radius: 12px;
-            border: 2px solid #ddd;
-        }
     </style>
-
 </head>
 
 <body class="is-preload">
@@ -93,73 +122,38 @@
 <section class="tiles">
 
     <article class="style1">
-        <span class="image">
-            <img src="images/pic02.jpg" alt="Uhren Display">
-        </span>
-        <div>
-            <h2>Kollektion im Überblick</h2>
-            <p>Die beliebtesten Modelle in einer Übersicht.</p>
-        </div>
+        <span class="image"><img src="images/pic02.jpg" alt="Uhren Display"></span>
+        <div><h2>Kollektion im Überblick</h2><p>Die beliebtesten Modelle in einer Übersicht.</p></div>
     </article>
 
     <article class="style2">
-        <span class="image">
-            <img src="images/pic03.jpg" alt="Makro Zifferblatt">
-        </span>
-        <div>
-            <h2>Feine Details</h2>
-            <p>Präzision und hochwertige Verarbeitung.</p>
-        </div>
+        <span class="image"><img src="images/pic03.jpg" alt="Makro Zifferblatt"></span>
+        <div><h2>Feine Details</h2><p>Präzision und hochwertige Verarbeitung.</p></div>
     </article>
 
     <article class="style3">
-        <span class="image">
-            <img src="images/pic04.jpg" alt="Wrist Shot">
-        </span>
-        <div>
-            <h2>Am Handgelenk</h2>
-            <p>Eleganz für Alltag und besondere Momente.</p>
-        </div>
+        <span class="image"><img src="images/pic04.jpg" alt="Wrist Shot"></span>
+        <div><h2>Am Handgelenk</h2><p>Eleganz für Alltag und besondere Momente.</p></div>
     </article>
 
     <article class="style4">
-        <span class="image">
-            <img src="images/pic10.jpg" alt="Showcase">
-        </span>
-        <div>
-            <h2>Premium Auswahl</h2>
-            <p>Exklusive Modelle für Liebhaber.</p>
-        </div>
+        <span class="image"><img src="images/pic10.jpg" alt="Showcase"></span>
+        <div><h2>Premium Auswahl</h2><p>Exklusive Modelle für Liebhaber.</p></div>
     </article>
 
     <article class="style2">
-        <span class="image">
-            <img src="images/pic11.jpg" alt="Seiko Gold">
-        </span>
-        <div>
-            <h2>Seiko Highlights</h2>
-            <p>Goldene Designs & hochwertige Materialien.</p>
-        </div>
+        <span class="image"><img src="images/pic11.jpg" alt="Seiko Gold"></span>
+        <div><h2>Seiko Highlights</h2><p>Goldene Designs & hochwertige Materialien.</p></div>
     </article>
 
     <article class="style3">
-        <span class="image">
-            <img src="images/pic14.jpg" alt="Outdoor Uhr">
-        </span>
-        <div>
-            <h2>Outdoor Modelle</h2>
-            <p>Robust, langlebig & wasserdicht.</p>
-        </div>
+        <span class="image"><img src="images/pic14.jpg" alt="Outdoor Uhr"></span>
+        <div><h2>Outdoor Modelle</h2><p>Robust, langlebig & wasserdicht.</p></div>
     </article>
 
     <article class="style1">
-        <span class="image">
-            <img src="images/pic15.jpg" alt="Blue Red Watch">
-        </span>
-        <div>
-            <h2>Sportlich & Modern</h2>
-            <p>Markante Designs für starke Persönlichkeiten.</p>
-        </div>
+        <span class="image"><img src="images/pic15.jpg" alt="Blue Red Watch"></span>
+        <div><h2>Sportlich & Modern</h2><p>Markante Designs für starke Persönlichkeiten.</p></div>
     </article>
 
 </section>
@@ -174,12 +168,8 @@
 <section>
     <h2>Kontakt</h2>
 
-    <p><strong>Message us on WhatsApp:</strong></p>
-
     <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
-       target="_blank" class="button primary">
-       WhatsApp Nachricht senden
-    </a>
+       target="_blank" class="button primary">WhatsApp Nachricht senden</a>
 
     <div class="qr-box">
         <p>WhatsApp QR Code:</p>
@@ -206,6 +196,14 @@
         Mo–Fr: 10:00–19:00<br>
         Sa: 10:00–16:00
     </p>
+
+    <!-- GOOGLE MAPS -->
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=Residenzstraße+114+13409+Berlin&output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen=""
+            loading="lazy"></iframe>
+    </div>
 </section>
 
 </div>
@@ -213,12 +211,13 @@
 
 </div>
 
-<!-- Floating WhatsApp Button -->
+<!-- WhatsApp Button -->
 <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
    class="whatsapp-float" target="_blank">
     <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
 
+<!-- JS -->
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/browser.min.js"></script>
 <script src="./assets/js/breakpoints.min.js"></script>

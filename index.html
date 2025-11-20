@@ -1,16 +1,57 @@
 <!DOCTYPE HTML>
 <html lang="de">
 <head>
-    <title>Galerie Osman – Uhren & Schmuck Berlin</title>
+    <title>Galerie Osman – Seiko Fachhändler & Uhrenservice Berlin</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Galerie Osman – Autorisiertes Seiko-Fachgeschäft in Berlin Reinickendorf. Hochwertige Uhren, Reparaturservice und persönliche Beratung." />
 
+    <!-- SEO -->
+    <meta name="description" content="Galerie Osman – Seiko Fachhändler & Uhrenservice in Berlin Reinickendorf. Hochwertige Uhren, Batteriewechsel, Reparatur und persönliche Beratung." />
+    <meta name="keywords" content="Uhren Berlin, Seiko Berlin, Uhrenservice, Batteriewechsel, Uhrenreparatur, Reinickendorf, Galerie Osman" />
+    <meta name="author" content="Galerie Osman" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hasfahani.github.io/osmann-galerie/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Galerie Osman – Seiko Fachhändler & Uhrenservice Berlin" />
+    <meta property="og:description" content="Autorisiertes Seiko-Fachgeschäft in Berlin Reinickendorf. Uhrenverkauf, Batteriewechsel und Reparaturservice." />
+    <meta property="og:url" content="https://hasfahani.github.io/osmann-galerie/" />
+    <meta property="og:image" content="https://hasfahani.github.io/osmann-galerie/images/logo.png" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
-    <!-- WhatsApp Button CSS -->
+    <!-- Custom Styling -->
     <style>
+        /* Modern sticky header */
+        #header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(6px);
+            background: rgba(0, 0, 0, 0.88);
+        }
+
+        /* Menu button */
+        #header nav ul li a[href="#menu"] {
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        /* Logo tweak */
+        #header .logo .symbol img {
+            border-radius: 50%;
+        }
+
+        /* Better tap area */
+        #header nav ul li a {
+            padding: 0.6em 0.9em;
+        }
+
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             width: 65px;
@@ -27,27 +68,22 @@
             align-items: center;
             justify-content: center;
         }
-
         .whatsapp-float img {
             width: 40px;
             height: 40px;
         }
-
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
             40% {transform: translateY(-10px);}
             60% {transform: translateY(-5px);}
         }
 
-        .qr-box {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .qr-box img {
-            width: 170px;
-            border-radius: 12px;
-            border: 2px solid #ddd;
+        /* Google Map Styling */
+        .map-container {
+            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -89,34 +125,22 @@
 
     <article class="style1">
         <span class="image"><img src="images/pic01.jpg" alt="" /></span>
-        <div>
-            <h2>Unser Geschäft</h2>
-            <p>Besuchen Sie uns in der Residenzstraße 114, 13409 Berlin.</p>
-        </div>
+        <div><h2>Unser Geschäft</h2><p>Besuchen Sie uns in der Residenzstraße 114.</p></div>
     </article>
 
     <article class="style2">
         <span class="image"><img src="images/pic02.jpg" alt="" /></span>
-        <div>
-            <h2>Kollektion</h2>
-            <p>Moderne und klassische Modelle.</p>
-        </div>
+        <div><h2>Kollektion</h2><p>Moderne und klassische Modelle.</p></div>
     </article>
 
     <article class="style3">
         <span class="image"><img src="images/pic07.jpg" alt="" /></span>
-        <div>
-            <h2>Reparaturservice</h2>
-            <p>Batteriewechsel, Bandkürzung & Wartung.</p>
-        </div>
+        <div><h2>Reparaturservice</h2><p>Batteriewechsel, Bandkürzung & Wartung.</p></div>
     </article>
 
     <article class="style4">
         <span class="image"><img src="images/pic11.jpg" alt="" /></span>
-        <div>
-            <h2>Seiko Fachhändler</h2>
-            <p>Offizieller Händler mit Expertise.</p>
-        </div>
+        <div><h2>Seiko Fachhändler</h2><p>Offizieller Händler mit Expertise.</p></div>
     </article>
 
 </section>
@@ -129,13 +153,8 @@
 
 <section>
     <h2>Kontakt</h2>
-    
-    <p><strong>Message us on WhatsApp:</strong></p>
-
     <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
-       target="_blank" class="button primary">
-       WhatsApp Nachricht senden
-    </a>
+       target="_blank" class="button primary">WhatsApp Nachricht senden</a>
 
     <div class="qr-box">
         <p>WhatsApp QR Code:</p>
@@ -162,6 +181,14 @@
         Mo–Fr: 10:00–19:00<br>
         Sa: 10:00–16:00
     </p>
+
+    <!-- GOOGLE MAPS -->
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=Residenzstraße+114+13409+Berlin&output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen=""
+            loading="lazy"></iframe>
+    </div>
 </section>
 
 </div>
@@ -169,12 +196,13 @@
 
 </div>
 
-<!-- Floating WhatsApp Button -->
+<!-- WhatsApp Button -->
 <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
    class="whatsapp-float" target="_blank">
     <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
 
+<!-- JS -->
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/browser.min.js"></script>
 <script src="./assets/js/breakpoints.min.js"></script>

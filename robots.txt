@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hasfahani.github.io/osmann-galerie/sitemap.xml
