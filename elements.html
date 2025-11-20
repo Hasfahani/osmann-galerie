@@ -6,79 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SEO -->
-    <meta name="description" content="Galerie Osman – ausgewählte Uhrenkollektion. Seiko Modelle, moderne Designs und hochwertige Zeitmesser in Berlin Reinickendorf." />
-    <meta name="keywords" content="Kollektion, Uhren, Seiko, Uhren Berlin, Galerie Osman, Reinickendorf" />
-    <meta name="author" content="Galerie Osman" />
-    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Galerie Osman – hochwertige Uhrenkollektion in Berlin Reinickendorf. Moderne Designs, Seiko Modelle & elegante Zeitmesser." />
     <link rel="canonical" href="https://hasfahani.github.io/osmann-galerie/elements.html" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
     <meta property="og:title" content="Kollektion – Galerie Osman" />
-    <meta property="og:description" content="Hochwertige Uhrenmodelle und exklusive Auswahl bei Galerie Osman in Berlin Reinickendorf." />
+    <meta property="og:description" content="Exklusive Uhren, moderne Designs und hochwertige Auswahl bei Galerie Osman in Berlin Reinickendorf." />
     <meta property="og:image" content="https://hasfahani.github.io/osmann-galerie/images/logo.png" />
 
-    <!-- CSS -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
     <style>
-
-        /* Modern sticky header */
         #header {
             position: sticky;
             top: 0;
-            z-index: 1000;
+            background: rgba(0,0,0,0.88);
             backdrop-filter: blur(6px);
-            background: rgba(0, 0, 0, 0.88);
+            z-index: 1000;
         }
+        #header .logo .symbol img { border-radius: 50%; }
 
-        #header nav ul li a[href="#menu"] {
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            font-size: 0.9em;
-        }
-
-        #header .logo .symbol img {
-            border-radius: 50%;
-        }
-
-        #header nav ul li a {
-            padding: 0.6em 0.9em;
-        }
-
-        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             width: 65px;
             height: 65px;
             bottom: 25px;
             right: 25px;
-            background-color: #25D366;
+            background: #25D366;
             border-radius: 50%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: bounce 1.8s infinite;
             box-shadow: 0 3px 10px rgba(0,0,0,0.4);
             z-index: 9999;
-            animation: bounce 1.8s infinite;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .whatsapp-float img { width: 40px; height: 40px; }
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            0%,20%,50%,80%,100% {transform: translateY(0);}
             40% {transform: translateY(-10px);}
             60% {transform: translateY(-5px);}
         }
 
-        /* Google Map Styling */
         .map-container {
-            margin-top: 15px;
-            border-radius: 10px;
+            margin-top: 20px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
         }
-
     </style>
 </head>
 
@@ -89,7 +65,7 @@
 <header id="header">
     <div class="inner">
         <a href="index.html" class="logo">
-            <span class="symbol"><img src="images/logo.png" alt="Logo" /></span>
+            <span class="symbol"><img src="images/logo.png" alt="" /></span>
             <span class="title">Galerie Osman</span>
         </a>
         <nav><ul><li><a href="#menu">Menü</a></li></ul></nav>
@@ -103,6 +79,8 @@
         <li><a href="index.html">Startseite</a></li>
         <li><a href="ueber-uns.html">Über uns & Service</a></li>
         <li><a href="elements.html">Kollektion</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
         <li><a href="#footer">Kontakt</a></li>
     </ul>
 </nav>
@@ -122,38 +100,73 @@
 <section class="tiles">
 
     <article class="style1">
-        <span class="image"><img src="images/pic02.jpg" alt="Uhren Display"></span>
-        <div><h2>Kollektion im Überblick</h2><p>Die beliebtesten Modelle in einer Übersicht.</p></div>
+        <span class="image">
+            <img src="images/pic02.jpg" alt="Uhren Display">
+        </span>
+        <div>
+            <h2>Kollektion im Überblick</h2>
+            <p>Die beliebtesten Modelle in einer Übersicht.</p>
+        </div>
     </article>
 
     <article class="style2">
-        <span class="image"><img src="images/pic03.jpg" alt="Makro Zifferblatt"></span>
-        <div><h2>Feine Details</h2><p>Präzision und hochwertige Verarbeitung.</p></div>
+        <span class="image">
+            <img src="images/pic03.jpg" alt="Makro Zifferblatt">
+        </span>
+        <div>
+            <h2>Feine Details</h2>
+            <p>Präzision und hochwertige Verarbeitung.</p>
+        </div>
     </article>
 
     <article class="style3">
-        <span class="image"><img src="images/pic04.jpg" alt="Wrist Shot"></span>
-        <div><h2>Am Handgelenk</h2><p>Eleganz für Alltag und besondere Momente.</p></div>
+        <span class="image">
+            <img src="images/pic04.jpg" alt="Wrist Shot">
+        </span>
+        <div>
+            <h2>Am Handgelenk</h2>
+            <p>Eleganz für Alltag & besondere Momente.</p>
+        </div>
     </article>
 
     <article class="style4">
-        <span class="image"><img src="images/pic10.jpg" alt="Showcase"></span>
-        <div><h2>Premium Auswahl</h2><p>Exklusive Modelle für Liebhaber.</p></div>
+        <span class="image">
+            <img src="images/pic10.jpg" alt="Showcase">
+        </span>
+        <div>
+            <h2>Premium Auswahl</h2>
+            <p>Exklusive Modelle für Liebhaber.</p>
+        </div>
     </article>
 
     <article class="style2">
-        <span class="image"><img src="images/pic11.jpg" alt="Seiko Gold"></span>
-        <div><h2>Seiko Highlights</h2><p>Goldene Designs & hochwertige Materialien.</p></div>
+        <span class="image">
+            <img src="images/pic11.jpg" alt="Gold Seiko">
+        </span>
+        <div>
+            <h2>Seiko Highlights</h2>
+            <p>Goldene Designs & hochwertige Materialien.</p>
+        </div>
     </article>
 
     <article class="style3">
-        <span class="image"><img src="images/pic14.jpg" alt="Outdoor Uhr"></span>
-        <div><h2>Outdoor Modelle</h2><p>Robust, langlebig & wasserdicht.</p></div>
+        <span class="image">
+            <img src="images/pic14.jpg" alt="Outdoor Uhr">
+        </span>
+        <div>
+            <h2>Outdoor Modelle</h2>
+            <p>Robust, langlebig & wasserdicht.</p>
+        </div>
     </article>
 
     <article class="style1">
-        <span class="image"><img src="images/pic15.jpg" alt="Blue Red Watch"></span>
-        <div><h2>Sportlich & Modern</h2><p>Markante Designs für starke Persönlichkeiten.</p></div>
+        <span class="image">
+            <img src="images/pic15.jpg" alt="Sportlich modern">
+        </span>
+        <div>
+            <h2>Sportlich & Modern</h2>
+            <p>Markante Designs für starke Persönlichkeiten.</p>
+        </div>
     </article>
 
 </section>
@@ -173,7 +186,7 @@
 
     <div class="qr-box">
         <p>WhatsApp QR Code:</p>
-        <img src="images/qr-whatsapp.png" alt="WhatsApp QR Code" />
+        <img src="images/qr-whatsapp.png" alt="">
     </div>
 
     <form method="post" action="mailto:zouheir.osman1@gmail.com" enctype="text/plain">
@@ -191,20 +204,24 @@
     <p>
         Residenzstraße 114<br>
         13409 Berlin<br>
-        Telefon: +49 163 1522940<br><br>
+        Telefon: <a href="tel:+491631522940">+49 163 1522940</a><br><br>
         <strong>Öffnungszeiten:</strong><br>
         Mo–Fr: 10:00–19:00<br>
         Sa: 10:00–16:00
     </p>
 
-    <!-- GOOGLE MAPS -->
     <div class="map-container">
         <iframe
             src="https://www.google.com/maps?q=Residenzstraße+114+13409+Berlin&output=embed"
-            width="100%" height="300" style="border:0;" allowfullscreen=""
-            loading="lazy"></iframe>
+            width="100%" height="300" style="border:0;" loading="lazy"></iframe>
     </div>
 </section>
+
+<hr>
+<p style="text-align:center;">
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a>
+</p>
 
 </div>
 </footer>
@@ -214,10 +231,10 @@
 <!-- WhatsApp Button -->
 <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
    class="whatsapp-float" target="_blank">
-    <img src="images/whatsapp.png" alt="WhatsApp">
+    <img src="images/whatsapp.png" alt="">
 </a>
 
-<!-- JS -->
+<!-- Scripts -->
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/browser.min.js"></script>
 <script src="./assets/js/breakpoints.min.js"></script>

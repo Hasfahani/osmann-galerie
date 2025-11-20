@@ -5,10 +5,9 @@
     <title>Impressum – Galerie Osman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO -->
-    <meta name="description" content="Impressum von Galerie Osman – Seiko Fachhändler & Uhrenservice in Berlin Reinickendorf." />
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
 
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
@@ -16,15 +15,12 @@
         #header {
             position: sticky;
             top: 0;
-            background: rgba(0,0,0,0.9);
+            background: rgba(0,0,0,0.88);
             backdrop-filter: blur(6px);
             z-index: 1000;
         }
         #header .logo .symbol img { border-radius: 50%; }
-        #header nav ul li a {
-            padding: 0.6em 0.9em;
-            letter-spacing: 0.05em;
-        }
+
         .content-box {
             background: #222;
             padding: 2rem;
@@ -37,6 +33,7 @@
 <body>
 <div id="wrapper">
 
+<!-- Header -->
 <header id="header">
     <div class="inner">
         <a href="index.html" class="logo">
@@ -47,6 +44,7 @@
     </div>
 </header>
 
+<!-- Menu -->
 <nav id="menu">
     <h2>Menü</h2>
     <ul>
@@ -55,9 +53,11 @@
         <li><a href="elements.html">Kollektion</a></li>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="#footer">Kontakt</a></li>
     </ul>
 </nav>
 
+<!-- Main -->
 <div id="main">
 <div class="inner">
 
@@ -66,7 +66,6 @@
 <div class="content-box">
 
 <h3>Angaben gemäß § 5 TMG</h3>
-
 <p>
 <strong>Galerie Osman</strong><br>
 Inhaber: <strong>Zouheir Osman</strong><br>
@@ -77,13 +76,13 @@ Deutschland
 
 <h3>Kontakt</h3>
 <p>
-Telefon: 0163 1522940<br>
-E-Mail: zouheir.osman1@gmail.com
+Telefon: <a href="tel:+491631522940">+49 163 1522940</a><br>
+E-Mail: <a href="mailto:zouheir.osman1@gmail.com">zouheir.osman1@gmail.com</a>
 </p>
 
 <h3>Umsatzsteuer-ID</h3>
 <p>
-Keine Angabe / entfällt (Kleinunternehmer gemäß § 19 UStG).  
+Keine Angabe / entfällt (Kleinunternehmer gemäß § 19 UStG).
 </p>
 
 <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
@@ -95,7 +94,7 @@ Residenzstraße 114<br>
 
 <h3>Haftungsausschluss</h3>
 <p>
-Alle Inhalte wurden sorgfältig geprüft. Für externe Links übernehmen wir keine Haftung.
+Die Inhalte dieser Website wurden sorgfältig erstellt. Für externe Links übernehmen wir keine Haftung.
 </p>
 
 </div>
@@ -103,14 +102,22 @@ Alle Inhalte wurden sorgfältig geprüft. Für externe Links übernehmen wir kei
 </div>
 </div>
 
+<!-- Footer -->
 <footer id="footer">
 <div class="inner">
-    <p>&copy; Galerie Osman. Alle Rechte vorbehalten.</p>
+
+<hr>
+<p style="text-align:center;">
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a>
+</p>
+
 </div>
 </footer>
 
 </div>
 
+<!-- Scripts -->
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/browser.min.js"></script>
 <script src="./assets/js/breakpoints.min.js"></script>
