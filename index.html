@@ -9,21 +9,48 @@
     <meta name="description" content="Galerie Osman – Seiko Fachhändler & professioneller Uhrenservice in Berlin Reinickendorf. Hochwertige Uhren, Batteriewechsel, Reparaturen & Beratung." />
     <meta name="keywords" content="Uhren Berlin, Seiko Berlin, Uhrenservice, Batteriewechsel, Uhren Reparatur, Reinickendorf, Galerie Osman" />
     <meta name="author" content="Galerie Osman" />
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://hasfahani.github.io/osmann-galerie/" />
 
-    <!-- OG Preview -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Galerie Osman – Seiko Fachhändler Berlin" />
     <meta property="og:description" content="Exklusive Uhren, professionelle Reparaturen und Sofortservice in Berlin Reinickendorf." />
     <meta property="og:image" content="https://hasfahani.github.io/osmann-galerie/images/logo.png" />
     <meta property="og:type" content="website" />
 
-    <!-- Styles -->
+    <!-- Favicon & CSS -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Galerie Osman",
+      "image": "https://hasfahani.github.io/osmann-galerie/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Residenzstraße 114",
+        "addressLocality": "Berlin",
+        "postalCode": "13409",
+        "addressCountry": "DE"
+      },
+      "telephone": "+491631522940",
+      "url": "https://hasfahani.github.io/osmann-galerie/",
+      "priceRange": "$$",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.5681,
+        "longitude": 13.3600
+      }
+    }
+    </script>
+
+    <!-- Custom Styles -->
     <style>
-        /* Modern Sticky Header */
+        /* Sticky Header */
         #header {
             position: sticky;
             top: 0;
@@ -32,9 +59,12 @@
             background: rgba(0,0,0,0.88);
         }
         #header .logo .symbol img { border-radius: 50%; }
-        #header nav ul li a { padding: 0.6em 0.9em; letter-spacing: 0.07em; }
+        #header nav ul li a {
+            padding: 0.6em 0.9em;
+            letter-spacing: 0.07em;
+        }
 
-        /* WhatsApp Button */
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             width: 65px;
@@ -51,13 +81,49 @@
             z-index: 9999;
         }
         .whatsapp-float img { width: 40px; height: 40px; }
-        @keyframes bounce { 
-            0%,20%,50%,80%,100% {transform: translateY(0);} 
-            40% {transform: translateY(-10px);} 
-            60% {transform: translateY(-5px);} 
+
+        @keyframes bounce {
+            0%,20%,50%,80%,100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
         }
 
-        /* Map */
+        /* Call Now Button (Mobile) */
+        .call-now {
+            position: fixed;
+            bottom: 100px;
+            right: 25px;
+            background: #0aa12c;
+            color: #fff;
+            font-size: 28px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+            z-index: 9999;
+        }
+        @media (min-width: 800px) {
+            .call-now { display: none; }
+        }
+
+        /* Fade-in Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(15px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Map container */
         .map-container {
             margin-top: 15px;
             border-radius: 12px;
@@ -74,7 +140,7 @@
 <header id="header">
     <div class="inner">
         <a href="index.html" class="logo">
-            <span class="symbol"><img src="images/logo.png" alt="Logo" /></span>
+            <span class="symbol"><img src="images/logo.png" alt="" loading="lazy" /></span>
             <span class="title">Galerie Osman</span>
         </a>
         <nav><ul><li><a href="#menu">Menü</a></li></ul></nav>
@@ -90,13 +156,13 @@
         <li><a href="elements.html">Kollektion</a></li>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="#footer">Kontakt</a></li>
+        <li><a href="index.html#footer">Kontakt</a></li>
     </ul>
 </nav>
 
 <!-- Main -->
 <div id="main">
-<div class="inner">
+<div class="inner fade-in">
 
 <header>
     <h1>Exklusive Uhren & Professioneller Service in Berlin</h1>
@@ -105,32 +171,32 @@
 
 <section class="tiles">
 
-    <article class="style1">
-        <span class="image"><img src="images/pic01.jpg" alt=""></span>
+    <article class="style1 fade-in">
+        <span class="image"><img src="images/pic01.jpg" alt="" loading="lazy"></span>
         <div>
             <h2>Unser Geschäft</h2>
             <p>Besuchen Sie uns in der Residenzstraße 114, 13409 Berlin.</p>
         </div>
     </article>
 
-    <article class="style2">
-        <span class="image"><img src="images/pic02.jpg" alt=""></span>
+    <article class="style2 fade-in">
+        <span class="image"><img src="images/pic02.jpg" alt="" loading="lazy"></span>
         <div>
             <h2>Kollektion</h2>
             <p>Moderne und klassische Modelle.</p>
         </div>
     </article>
 
-    <article class="style3">
-        <span class="image"><img src="images/pic07.jpg" alt=""></span>
+    <article class="style3 fade-in">
+        <span class="image"><img src="images/pic07.jpg" alt="" loading="lazy"></span>
         <div>
             <h2>Reparaturservice</h2>
             <p>Batteriewechsel, Bandkürzung & Wartung.</p>
         </div>
     </article>
 
-    <article class="style4">
-        <span class="image"><img src="images/pic11.jpg" alt=""></span>
+    <article class="style4 fade-in">
+        <span class="image"><img src="images/pic11.jpg" alt="" loading="lazy"></span>
         <div>
             <h2>Seiko Fachhändler</h2>
             <p>Offizieller Händler mit Expertise.</p>
@@ -149,25 +215,24 @@
 <section>
     <h2>Kontakt</h2>
 
-    <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr." 
-       target="_blank" class="button primary">WhatsApp Nachricht senden</a>
+    <a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
+       target="_blank" class="button primary">
+       WhatsApp Nachricht senden
+    </a>
 
-    <div class="qr-box">
-        <p>WhatsApp QR Code:</p>
-        <img src="images/qr-whatsapp.png" alt="WhatsApp QR Code" />
-    </div>
+    <!-- QR CODE REMOVED -->
 
     <form method="post" action="mailto:zouheir.osman1@gmail.com" enctype="text/plain">
         <div class="fields">
-            <div class="field half"><input type="text" name="name" placeholder="Name" required></div>
-            <div class="field half"><input type="email" name="email" placeholder="E-Mail" required></div>
-            <div class="field"><textarea name="message" placeholder="Nachricht" required></textarea></div>
+            <div class="field half"> <input type="text" name="name" placeholder="Name" required> </div>
+            <div class="field half"> <input type="email" name="email" placeholder="E-Mail" required> </div>
+            <div class="field"> <textarea name="message" placeholder="Nachricht" required></textarea> </div>
         </div>
         <ul class="actions"><li><input type="submit" value="Senden" class="primary"></li></ul>
     </form>
 </section>
 
-<section>
+<section class="fade-in">
     <h2>Adresse & Öffnungszeiten</h2>
     <p>
         Residenzstraße 114<br>
@@ -178,11 +243,11 @@
         Sa: 10:00–16:00
     </p>
 
-    <!-- Google Maps -->
     <div class="map-container">
         <iframe 
             src="https://www.google.com/maps?q=Residenzstraße+114+13409+Berlin&output=embed"
-            width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+            width="100%" height="300" style="border:0;" loading="lazy">
+        </iframe>
     </div>
 </section>
 
@@ -197,11 +262,14 @@
 
 </div>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr." 
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
    class="whatsapp-float" target="_blank">
-    <img src="images/whatsapp.png" alt="">
+    <img src="images/whatsapp.png" alt="" loading="lazy">
 </a>
+
+<!-- Call Now Button (Mobile) -->
+<a href="tel:+491631522940" class="call-now">📞</a>
 
 <!-- Scripts -->
 <script src="./assets/js/jquery.min.js"></script>
@@ -209,6 +277,21 @@
 <script src="./assets/js/breakpoints.min.js"></script>
 <script src="./assets/js/util.js"></script>
 <script src="./assets/js/main.js"></script>
+
+<!-- Smooth scroll -->
+<script>
+document.querySelectorAll('a[href^="index.html#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    const url = this.getAttribute("href");
+    const parts = url.split("#");
+    if (window.location.pathname.endsWith(parts[0])) {
+      e.preventDefault();
+      const target = document.getElementById(parts[1]);
+      if (target) target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+</script>
 
 </body>
 </html>
