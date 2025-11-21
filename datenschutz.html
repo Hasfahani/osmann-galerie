@@ -1,44 +1,88 @@
 <!DOCTYPE HTML>
 <html lang="de">
 <head>
+    <title>Datenschutz – Galerie Osman</title>
     <meta charset="utf-8" />
-    <title>Datenschutzerklärung – Galerie Osman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- We don't want this page in search results -->
-    <meta name="robots" content="noindex" />
+    <meta name="robots" content="noindex, nofollow">
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 
-    <style>
-        #header {
-            position: sticky;
-            top: 0;
-            background: rgba(0,0,0,0.88);
-            backdrop-filter: blur(6px);
-            z-index: 1000;
-        }
-        #header .logo .symbol img { border-radius: 50%; }
+<style>
+    #header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: blur(6px);
+        background: rgba(0,0,0,0.88);
+    }
+    #header .logo .symbol img { border-radius: 50%; }
 
-        .content-box {
-            background: #222;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-        }
-    </style>
+    .fade-in {
+        opacity: 0;
+        transform: translateY(15px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    @keyframes fadeInUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        width: 65px;
+        height: 65px;
+        bottom: 25px;
+        right: 25px;
+        background: #25D366;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: bounce 1.8s infinite;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+        z-index: 9999;
+    }
+    .whatsapp-float img { width: 40px; height: 40px; }
+
+    @keyframes bounce {
+        0%,20%,50%,80%,100% {transform: translateY(0);}
+        40% {transform: translateY(-10px);}
+        60% {transform: translateY(-5px);}
+    }
+
+    .call-now {
+        position: fixed;
+        bottom: 100px;
+        right: 25px;
+        background: #0aa12c;
+        color: white;
+        font-size: 28px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+        z-index: 9999;
+    }
+    @media (min-width: 800px) {
+        .call-now { display: none; }
+    }
+</style>
 </head>
 
-<body>
+<body class="is-preload">
 <div id="wrapper">
 
 <!-- Header -->
 <header id="header">
     <div class="inner">
         <a href="index.html" class="logo">
-            <span class="symbol"><img src="images/logo.png" alt="Logo"></span>
+            <span class="symbol"><img src="images/logo.png" alt="Logo" loading="lazy" /></span>
             <span class="title">Galerie Osman</span>
         </a>
         <nav><ul><li><a href="#menu">Menü</a></li></ul></nav>
@@ -54,143 +98,84 @@
         <li><a href="elements.html">Kollektion</a></li>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="#footer">Kontakt</a></li>
+        <li><a href="index.html#footer">Kontakt</a></li>
     </ul>
 </nav>
 
 <!-- Main -->
 <div id="main">
-<div class="inner">
+<div class="inner fade-in">
 
 <h1>Datenschutzerklärung</h1>
 
-<div class="content-box">
-
-<h3>1. Verantwortliche Stelle</h3>
+<h2>1. Verantwortliche Stelle</h2>
 <p>
-<strong>Galerie Osman</strong><br>
-Inhaber: <strong>Zouheir Osman</strong><br>
-Residenzstraße 114<br>
-13409 Berlin<br>
-Telefon: <a href="tel:+491631522940">+49 163 1522940</a><br>
-E-Mail: <a href="mailto:zouheir.osman1@gmail.com">zouheir.osman1@gmail.com</a>
+    Galerie Osman<br>
+    Residenzstraße 114<br>
+    13409 Berlin<br>
+    Telefon: <a href="tel:+491631522940">+49 163 1522940</a><br>
+    E-Mail: <a href="mailto:zouheir.osman1@gmail.com">zouheir.osman1@gmail.com</a>
 </p>
 
-<hr>
-
-<h3>2. Erhebung und Speicherung personenbezogener Daten</h3>
+<h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
 <p>
-Unsere Website kann grundsätzlich ohne Registrierung genutzt werden.  
-Personenbezogene Daten werden nur erhoben, wenn Sie uns diese aktiv übermitteln, z.&nbsp;B. über das Kontaktformular oder per E-Mail.
-</p>
-
-<hr>
-
-<h3>3. Kontaktformular</h3>
-<p>
-Wenn Sie unser Kontaktformular nutzen, verarbeiten wir folgende Daten:
+Unsere Website sammelt **keine personenbezogenen Daten automatisch**.  
+Wir verwenden:
 </p>
 <ul>
-    <li>Name</li>
-    <li>E-Mail-Adresse</li>
-    <li>Ihre Nachricht</li>
+    <li>keine Cookies</li>
+    <li>kein Tracking (Google Analytics etc.)</li>
+    <li>keine Registrierung</li>
 </ul>
+
+<h3>2.1 Kontakt per E-Mail</h3>
 <p>
-Die Verarbeitung erfolgt zur Bearbeitung Ihrer Anfrage.  
-Eine Weitergabe an Dritte findet nicht statt.  
-Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertrag / vorvertragliche Maßnahmen).
+Wenn Sie uns per E-Mail kontaktieren, werden die von Ihnen angegebenen Daten ausschließlich zur Bearbeitung Ihres Anliegens verwendet.
 </p>
 
-<hr>
-
-<h3>4. Kontakt per E-Mail</h3>
+<h3>2.2 Kontakt über WhatsApp</h3>
 <p>
-Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben ausschließlich zur Bearbeitung der Anfrage verwendet.  
-Rechtsgrundlage ist ebenfalls Art. 6 Abs. 1 lit. b DSGVO.
-</p>
-
-<hr>
-
-<h3>5. WhatsApp Kontakt</h3>
-<p>
-Auf unserer Website ist ein Link zu WhatsApp eingebunden.  
-Wenn Sie diesen nutzen, findet die Kommunikation über die Plattform des Anbieters WhatsApp Ireland Limited statt.  
-Dabei werden Daten an WhatsApp übermittelt und ggf. an Server außerhalb der EU weitergeleitet.
+Bei Nutzung unseres WhatsApp-Links verlassen Sie unsere Website und nutzen den Dienst von WhatsApp Ireland Limited.  
+Wir speichern keine Nachrichten oder Telefonnummern auf dieser Website.
 </p>
 <p>
-Weitere Informationen entnehmen Sie bitte der Datenschutzerklärung von WhatsApp:<br>
-<a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
-WhatsApp Datenschutzerklärung
+Weitere Informationen: <br>
+<a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">WhatsApp Datenschutzrichtlinie</a>
+</p>
+
+<h2>3. Weitergabe von Daten</h2>
+<p>
+Es erfolgt **keine Weitergabe** personenbezogener Daten an Dritte.
+</p>
+
+<h2>4. Server-Logs (GitHub Pages)</h2>
+<p>
+Unsere Website wird über GitHub Pages bereitgestellt.  
+GitHub speichert technische Logdaten (z. B. IP-Adresse), um den sicheren Betrieb zu gewährleisten.  
+Wir haben darauf keinen Einfluss.
+</p>
+<p>
+Weitere Infos:  
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">
+GitHub Datenschutzerklärung
 </a>
 </p>
 
-<hr>
-
-<h3>6. Google Maps</h3>
-<p>
-Wir binden auf unserer Website einen Kartenausschnitt über Google Maps ein.  
-Anbieter ist Google Ireland Limited.  
-Beim Aufruf der Karte werden Daten (z.&nbsp;B. IP-Adresse, Standortdaten) an Google übermittelt.
-</p>
-<p>
-Weitere Informationen finden Sie unter:<br>
-<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-Google Datenschutzerklärung
-</a>
-</p>
-
-<hr>
-
-<h3>7. Server-Logfiles (Hosting über GitHub Pages)</h3>
-<p>
-Unsere Website wird über GitHub Pages gehostet.  
-Beim Aufruf der Seiten werden automatisch technische Informationen verarbeitet (z.&nbsp;B. Browsertyp, Datum und Uhrzeit des Zugriffs, aufgerufene Seiten).  
-Diese Daten sind in der Regel anonymisiert und lassen keinen direkten Rückschluss auf Ihre Person zu.  
-Sie dienen ausschließlich der Sicherstellung des technischen Betriebs und der Sicherheit der Website.
-</p>
-
-<hr>
-
-<h3>8. Cookies und Tracking</h3>
-<p>
-Unsere Website verwendet:
-</p>
+<h2>5. Ihre Rechte</h2>
 <ul>
-    <li>keine Cookies zu Werbe- oder Trackingzwecken,</li>
-    <li>keine Analyse-Tools (z.&nbsp;B. Google Analytics).</li>
+    <li>Auskunft über gespeicherte Daten</li>
+    <li>Löschung Ihrer Daten</li>
+    <li>Berichtigung falscher Daten</li>
 </ul>
 
-<hr>
-
-<h3>9. Speicherdauer</h3>
+<h2>6. Kontakt für Datenschutzanfragen</h2>
 <p>
-Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.
+Bei Fragen oder zur Ausübung Ihrer Rechte kontaktieren Sie uns unter:  
+<a href="mailto:zouheir.osman1@gmail.com">zouheir.osman1@gmail.com</a>
 </p>
 
-<hr>
-
-<h3>10. Ihre Rechte als Betroffene/r</h3>
-<p>Sie haben insbesondere folgende Rechte:</p>
-<ul>
-    <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
-    <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
-    <li>Recht auf Löschung (Art. 17 DSGVO)</li>
-    <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
-    <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
-    <li>Recht auf Widerspruch (Art. 21 DSGVO)</li>
-</ul>
-<p>
-Zur Ausübung dieser Rechte können Sie uns jederzeit über die oben genannten Kontaktdaten kontaktieren.
-</p>
-
-<hr>
-
-<h3>11. Aktualisierung dieser Datenschutzerklärung</h3>
-<p>
-Diese Datenschutzerklärung kann bei Bedarf angepasst werden, wenn sich rechtliche Vorgaben oder der Funktionsumfang der Website ändern.
-</p>
-
-</div>
+<h2>7. Aktualität</h2>
+<p>Diese Datenschutzerklärung wurde zuletzt am **23. November 2025** aktualisiert.</p>
 
 </div>
 </div>
@@ -198,17 +183,22 @@ Diese Datenschutzerklärung kann bei Bedarf angepasst werden, wenn sich rechtlic
 <!-- Footer -->
 <footer id="footer">
 <div class="inner">
-
 <hr>
 <p style="text-align:center;">
     <a href="impressum.html">Impressum</a> |
-    <a href="datenschutz.html">Datenschutz</a>
+    <a href="index.html#footer">Kontakt</a>
 </p>
-
 </div>
 </footer>
 
-</div>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/491631522940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Uhr."
+   class="whatsapp-float" target="_blank">
+    <img src="images/whatsapp.png" loading="lazy">
+</a>
+
+<!-- Call-Now Button -->
+<a href="tel:+491631522940" class="call-now">📞</a>
 
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/browser.min.js"></script>
